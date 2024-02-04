@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* .navbar {
+    border: solid blue;
+position: ;
+    display:inline-block;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 150); 
+    padding: 10px;
+    top: 0;
+    width: 100%;
+
+} */
+
+.logo{
+    display: inline-block;
+}
+
+.logo img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.title {
+    display:inline-block;
+    text-align: center;
+    font-family: 'Rubik Marker Hatch', system-ui, Arial, sans-serif; /* Fallback font */
+    font-size: 4vw;
+    vertical-align: middle;
+}
+
+main {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #e9e19b;
+    justify-content: center;
+}
+
+.input-container {
+    min-width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.input-textarea {
+    height: 40vh;
+    width: 100%; /* 5/8 of the width */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 15px;
+    justify-content: center;
+    border-radius: 25px;
+    border-color: #e9e19b;
+    background-color: #e9e19b;
+    
+}
+
+.warning-message {
+    padding: 5px;
+    color: red;
+    width: 100%; /* Full width when on a new line */
+    box-sizing: border-box;
+    font-size: 1vw;
+}
+
+.button-container {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.action-button {
+    width: 48%; /* 2 buttons with a small gap in between */
+    padding: 15px;
+    border-radius: 20px;
+}
+
+#btn-encrypt{
+    background-color: rgb(220, 221, 221);
+    color: darkblue;
+    transition: background-color 2s;
+}
+
+#btn-decrypt{
+    background-color: darkblue;
+    color: rgb(220, 221, 221);
+    transition: background-color 2s;
+
+}
+
+button:hover{
+    scale: 102%;
+    background-color: #fde400;
+    cursor: pointer;
+}
+
+.output-section {
+    width: 50%;
+    min-width: 35vw;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#output{
+    background-image: url(/images/noMessage.png);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20vh;
+    border-color: #ffffff;
+}
+
+.copy-container{
+    width: 100%;
+}
+
+.copy-button{
+    background-color: rgb(220, 221, 221);
+    width: 48%; /* 2 buttons with a small gap in between */
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    transition: background-color 2s;
+
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    color: blanchedalmond;
+    padding: 10px;
+    justify-content: center;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .output-section {
+        width: 37.5%; /* 3/8 of the width on larger screens */
+        margin-top: 0; /* Remove margin on larger screens */
+        margin-left: auto; /* Push it to the right on larger screens */
+        background-color: #ffffff; /* Add your desired background color */
+        padding: 10px;
+    }
+
+}

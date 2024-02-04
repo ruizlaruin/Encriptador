@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./app.js"></script>
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/images/logo.png" alt="Imagen de criptografia" />
+      </div>
+      <h1 class="title">ENCRIPTADOR DE TEXTO</h1>
+    </nav>
+    <main>
+      <div class="input-container">
+        <textarea
+          id="entrada"
+          class="input-textarea"
+          rows="8"
+          placeholder="Ingrese el texto a encriptar ..."
+        ></textarea>
+        <p class="warning-message">&#9888 Solo letras minúsculas y sin acento.</p>
+        <div class="button-container">
+          <button id="btn-encrypt" class="action-button btn" onclick="
+            encrypting()">Encriptar</button>
+          <button id="btn-decrypt" class="action-button btn" onclick="decrypting()">Desencriptar</button>
+        </div>
+      </div>
+      <div class="output-section">
+        <textarea
+          id="output"
+          class="input-textarea"
+          rows="8"
+        ></textarea>
+        <div class="copy-container">
+          <button id="copy-btn" class="copy-button btn" onclick="copyToClipboard()" hidden>Copiar</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Desarrollado por Jean Ruiz / Idea de Alura - 2024 &copy</p>
+    </footer>
+  </body>
+</html>
